@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Positivum</title>
+    </head>
+
+        <body>
+        <?php include 'header.php' ?>
+
+            <h2 class="title">Click your mood's icon to get another citation!</h2> <!-- Titre et question principale sur le site --> 
+
+
+            <div class="wrapper-emoji">
+                <a onclick="randomizeFunction()" href="/positivum/resultatcitationemoji1" class="emoji">😩</a>
+            </div>
+
+            <div id="randomWord" class="citation typing-demo"></div>
+
+            <script>
+                const myList = ["If people are doubting how far you can go, go so far that you can't hear them anymore. Michele Ruiz", "Failure is the opportunity to begin again more intelligently. Henry Ford", "Gio est tellement beau que grâce à lui je sais coder ! Yanis Renaud", "The best revenge is massive success. Frank Sinatra", "The expert in anything was once a beginner. Helen Hayes", "We cannot solve problems with the kind of thinking we employed when we came up with them. Albert Einstein", "Learn as if you will live forever, live like you will die tomorrow. Mahatma Gandhi"];
+                
+                randomizeFunction()
+                
+                function randomizeFunction() {
+                    document.getElementById("randomWord").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+                }
+                
+                </script>
+
+
+        </body>
+
+
+    
+</html>
+
