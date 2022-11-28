@@ -1,7 +1,7 @@
 {
     {
       // Your API KEY
-      const API_KEY = "AIzaSyA2t3evClUKvKsgbXOBrAaqfLuIHjiJC3k";
+      const API_KEY = "AIzaSyBhOgSyFiZ9baFF_h12Kw5pCBLBzRr_pmQ";
 
       function displayResult2(response) {
         let tableHead = "";
@@ -25,7 +25,7 @@
 
       function loadData() {
         // Spreadsheet ID
-        const spreadsheetId = "1MjMoMbuRJqnrfhxjetvdny-dnsFfmLJX24OWiSFUYvk";
+        const spreadsheetId = "c6h7PdaTUhqZwM4p8E8Yy_JWsBl16xY4lXRclWFw";
         const range = "A:Z";
         getPublicValues({ spreadsheetId, range }, displayResult2);
       }
